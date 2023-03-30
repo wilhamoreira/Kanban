@@ -2,19 +2,19 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 html {
   font-size: 62.5%; /* 10px */
 }
 body{
-    font-size: 1.6rem;
-    font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 100%;
     background-color: #7C3AED;
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;   
 }
-
 .geral{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: #7C3AED;
     display: flex;
 }
@@ -24,19 +24,19 @@ aside{
     display: flex;
     flex-direction: column;
     height: 100%;
-    
+}
+aside > div{
+    position: fixed;
 }
 .icone-sidebar > img{
-    margin: 3.2rem 0 6rem 3.5rem;
+    margin: 3.2rem 0 6rem 3.5rem;    
 }
 aside .menu ul{
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 3.6rem;
-
 }
-
 aside  .menu ul li a{
     text-decoration: none;
     font-weight: 500;
@@ -44,11 +44,9 @@ aside  .menu ul li a{
     line-height: 125%;
     color: #CAB3FF;       
 }
-
 aside  .menu ul li a:hover{
     color: #FFFFFF;
 }
-
 aside .menu ul li a i{
     margin-right: 1.6rem;
 }
@@ -56,7 +54,6 @@ main{
     margin-top: 0.4rem;
     background-color:#FFFFFF ;
     flex: 1;
-    height: 100%;
     border-top-left-radius: 32px;
     padding: 4.8rem 3.2rem;
 }
@@ -77,7 +74,6 @@ header h1 i{
     outline: 0;    
     font-size: 2.4rem;
     color: #C7C7CD;
-
 }
 header img{
     width: 6.4rem;
@@ -92,7 +88,6 @@ form{
     padding: 2.4rem 0 ;
 }
 form button{
-    
     display: flex;
     align-items: center;
     color: white;
@@ -104,12 +99,9 @@ form button{
     gap: 0.5rem;
     background: #7C3AED;
     padding: 1.2rem 3.2rem;
-    
-    
 }
 form button i{
     font-size: 2.2rem;
-
 }
 form .div-pesquisa{
     width: 100%;
@@ -124,7 +116,6 @@ form .div-pesquisa{
 form .div-pesquisa i{
     font-size: 2.4rem;
     color: #403937;
-    
 }
 form .div-pesquisa input{
     width: 100%;
@@ -132,6 +123,7 @@ form .div-pesquisa input{
     border: none;
     outline: 0;
 }
+
 form .div-pesquisa input::placeholder{
     color:#7C7C8A;
 }
@@ -139,8 +131,6 @@ main .tarefas{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
-
 }
 main .fazer, .fazendo, .feito{
     width: 30%;
@@ -148,14 +138,6 @@ main .fazer, .fazendo, .feito{
     font-weight: 700;
     font-size: 20px;
     line-height: 130%;
-}
-
-main .fazendo{
-    width: 30%;
-}
-main .feito{
-    width: 30%;
-    
 }
 main .box{
     background: #FFFFFF;
@@ -189,13 +171,10 @@ main .box .rodape{
     font-weight: 500;
     font-size: 1.1rem;
     line-height: 130%;
-    
-
 }
 main .box .rodape span{
     padding: .4rem  .8rem ;
     color: #7C3AED;
     background: #E2D6FF;
     border-radius: 8px;
-
 }
